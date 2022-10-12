@@ -1,6 +1,4 @@
 # credit-risk
 Projeto de pesquisa...
 
-TEST ONE
-
-TEST TWO
+# Modelo de Regressão Logística
