@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.13)  20 NOV 2022 14:08
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.13)  20 NOV 2022 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,33 +782,36 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [10
 
 
-] [11
+]
+File: image/img1.png Graphic file (type bmp)
+<image/img1.png>
+[11
 
-] [12
+] [12] [13
 
-] [13
+] [14
 
 ] (./logistic-regression.bbl (./logistic-regression.brf)
 \tf@brf=\write5
 \openout5 = `logistic-regression.brf'.
 
-[14
+[15
 
 ]
 bibitemlist
-) [15
+) [16
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 415.
+(hyperref)                removing `\uppercase' on input line 435.
 
-[16
+[17
 
 
-] [17
+] [18
 
-] (./logistic-regression.ind) [18
+] (./logistic-regression.ind) [19
 
 ]
 \tf@lof=\write6
@@ -822,15 +825,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 (./logistic-regression.aux)
 Package rerunfilecheck Info: File `logistic-regression.brf' has not changed.
-(rerunfilecheck)             Checksum: 2909297EC815D26BC0E16024EA134870;55.
+(rerunfilecheck)             Checksum: 578C79B81CEC8966903219B7FADE8B11;110.
  ) 
 Here is how much of TeX's memory you used:
- 17278 strings out of 477627
- 286009 string characters out of 5838803
- 775012 words of memory out of 5000000
- 38182 multiletter control sequences out of 15000+600000
- 530323 words of font info for 65 fonts, out of 8000000 for 9000
+ 17309 strings out of 477627
+ 286518 string characters out of 5838803
+ 775699 words of memory out of 5000000
+ 38208 multiletter control sequences out of 15000+600000
+ 534586 words of font info for 66 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  87i,12n,90p,1064b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on logistic-regression.pdf (19 pages).
+Output written on logistic-regression.pdf (20 pages).

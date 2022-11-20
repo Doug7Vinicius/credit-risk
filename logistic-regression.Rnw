@@ -69,7 +69,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Regressão Logística Aplicada a Análise de Inadimplência de Cartão de Crédito}
+\titulo{Modelo de Regressão Logística Aplicada a Previsão de Inadimplência sobre Cartão de Crédito de uma Instituição Financeira}
 \autor{DOUGLAS VINÍCIUS GONÇALVES ARAÚJO}
 \local{JI-PARANÁ}
 \data{2022}
@@ -224,6 +224,7 @@
   \item[$ \Gamma $] Letra grega Gama
   \item[$ \Lambda $] Lambda
   \item[$ \zeta $] Letra grega minúscula zeta
+  \item[$ f(x;\theta)$] Função de Densidade de Probabilidade
   \item[$ \Pi $] Produtório
 \end{simbolos}
 % ---
@@ -249,8 +250,10 @@
 
 
 
-\section{Objetivos}
+  \section{Objetivos}
 
+O objetivo deste trabalho é desenvolver um modelo de previsão de risco de inadimplência 
+dos tomadores de cartões de créditos de uma instituição Financeira do Estado de Rondônia.
 
 
 
@@ -270,10 +273,23 @@
   
   \section{Breve Introdução sobre Machine Learning}
   
+Uma definição básica sobre Machine Learning (Aprendizado de Máquina) é englobar 
+um conjunto de regras com algoritmos e procedimentos que tem como objetivo de 
+extrair informações apartir dos dados e dessas informações tomar uma decisão.
+
+Segundo \cite{goodfellow2016deep}, os algoritmos de Machine Learning podem ser 
+amplamente categorizados como aprendizados Supervisionado e Não-Supervisionados, 
+sitentizando essa diferença, é o tipo de experiência durante o aprendizado do 
+algoritmo.
+
   
-  
-  
-  
+    \begin{figure}
+      \caption{\label{img1}Machine Learning e suas aplicações}
+      \begin{center}
+        \includegraphics[scale = 0.4]{image/img1.png}
+      \end{center}
+      \legend{Fonte: https://becominghuman.ai/an-introduction-to-machine-learning-7db04da817c4}
+    \end{figure}
   
   \section{Modelo de Regressão Logística}
   
