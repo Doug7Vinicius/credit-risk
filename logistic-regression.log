@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.13)  19 NOV 2022 21:41
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.13)  20 NOV 2022 07:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,7 +10,7 @@ Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/memoir.cls
-Document Class: memoir 2022/07/29 v3.7r configurable book, report, article document class
+Document Class: memoir 2022/11/17 v3.7.19 configurable book, report, article document class
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count181
@@ -23,29 +23,29 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-\stockheight=\skip50
-\stockwidth=\skip51
-\trimtop=\skip52
-\trimedge=\skip53
+\stockheight=\dimen140
+\stockwidth=\dimen141
+\trimtop=\skip50
+\trimedge=\skip51
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/mem12.clo
 File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
 )
-\binding=\skip54
-\spinemargin=\skip55
-\foremargin=\skip56
-\uppermargin=\skip57
-\lowermargin=\skip58
-\headdrop=\skip59
-\normalrulethickness=\skip60
-\mem@maxheadheight=\skip61
-\mem@maxfootheight=\skip62
-\headwidth=\skip63
+\binding=\skip52
+\spinemargin=\skip53
+\foremargin=\skip54
+\uppermargin=\skip55
+\lowermargin=\skip56
+\headdrop=\skip57
+\normalrulethickness=\skip58
+\mem@maxheadheight=\skip59
+\mem@maxfootheight=\skip60
+\headwidth=\skip61
 \c@storedpagenumber=\count184
-\memPD=\dimen140
-\m@mabparskip=\skip64
-\thanksmarkwidth=\skip65
-\thanksmarksep=\skip66
-\droptitle=\skip67
+\memPD=\dimen142
+\m@mabparskip=\skip62
+\thanksmarkwidth=\skip63
+\thanksmarksep=\skip64
+\droptitle=\skip65
 \c@book=\count185
 \c@part=\count186
 \c@chapter=\count187
@@ -54,77 +54,77 @@ File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
 \c@subsubsection=\count190
 \c@paragraph=\count191
 \c@subparagraph=\count192
-\beforechapskip=\skip68
-\midchapskip=\skip69
-\afterchapskip=\skip70
-\chapindent=\skip71
-\bottomsectionskip=\skip72
-\secindent=\skip73
-\beforesecskip=\skip74
-\aftersecskip=\skip75
-\subsecindent=\skip76
-\beforesubsecskip=\skip77
-\aftersubsecskip=\skip78
-\subsubsecindent=\skip79
-\beforesubsubsecskip=\skip80
-\aftersubsubsecskip=\skip81
-\paraindent=\skip82
-\beforeparaskip=\skip83
-\afterparaskip=\skip84
-\subparaindent=\skip85
-\beforesubparaskip=\skip86
-\aftersubparaskip=\skip87
-\pfbreakskip=\skip88
+\beforechapskip=\skip66
+\midchapskip=\skip67
+\afterchapskip=\skip68
+\chapindent=\skip69
+\bottomsectionskip=\skip70
+\secindent=\skip71
+\beforesecskip=\skip72
+\aftersecskip=\skip73
+\subsecindent=\skip74
+\beforesubsecskip=\skip75
+\aftersubsecskip=\skip76
+\subsubsecindent=\skip77
+\beforesubsubsecskip=\skip78
+\aftersubsubsecskip=\skip79
+\paraindent=\skip80
+\beforeparaskip=\skip81
+\afterparaskip=\skip82
+\subparaindent=\skip83
+\beforesubparaskip=\skip84
+\aftersubparaskip=\skip85
+\pfbreakskip=\skip86
 \c@@ppsavesec=\count193
 \c@@ppsaveapp=\count194
-\ragrparindent=\dimen141
-\everylistparindent=\dimen142
-\parsepi=\skip89
-\topsepi=\skip90
-\itemsepi=\skip91
-\parsepii=\skip92
-\topsepii=\skip93
-\topsepiii=\skip94
-\itemsepii=\skip95
-\itemsepiii=\skip96
-\partopsepii=\skip97
-\partopsepiii=\skip98
-\m@msavetopsep=\skip99
-\m@msavepartopsep=\skip100
+\ragrparindent=\dimen143
+\everylistparindent=\dimen144
+\parsepi=\skip87
+\topsepi=\skip88
+\itemsepi=\skip89
+\parsepii=\skip90
+\topsepii=\skip91
+\topsepiii=\skip92
+\itemsepii=\skip93
+\itemsepiii=\skip94
+\partopsepii=\skip95
+\partopsepiii=\skip96
+\m@msavetopsep=\skip97
+\m@msavepartopsep=\skip98
 \@enLab=\toks16
-\abstitleskip=\skip101
-\absleftindent=\skip102
-\abs@leftindent=\dimen143
-\absrightindent=\skip103
-\absparindent=\skip104
-\absparsep=\skip105
+\abstitleskip=\skip99
+\absleftindent=\skip100
+\abs@leftindent=\dimen145
+\absrightindent=\skip101
+\absparindent=\skip102
+\absparsep=\skip103
 \c@vslineno=\count195
 \c@poemline=\count196
 \c@modulo@vs=\count197
 \c@memfvsline=\count198
-\vleftskip=\skip106
-\vrightskip=\skip107
-\stanzaskip=\skip108
-\versewidth=\skip109
-\vgap=\skip110
-\vindent=\skip111
-\vleftmargin=\dimen144
+\vleftskip=\skip104
+\vrightskip=\skip105
+\stanzaskip=\skip106
+\versewidth=\skip107
+\vgap=\skip108
+\vindent=\skip109
+\vleftmargin=\dimen146
 \c@verse=\count199
 \c@chrsinstr=\count266
-\beforepoemtitleskip=\skip112
-\afterpoemtitleskip=\skip113
+\beforepoemtitleskip=\skip110
+\afterpoemtitleskip=\skip111
 \c@poem=\count267
-\beforePoemTitleskip=\skip114
-\midPoemTitleskip=\skip115
-\afterPoemTitleskip=\skip116
+\beforePoemTitleskip=\skip112
+\midPoemTitleskip=\skip113
+\afterPoemTitleskip=\skip114
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen145
+\col@sep=\dimen147
 \ar@mcellbox=\box51
-\extrarowheight=\dimen146
+\extrarowheight=\dimen148
 \NC@list=\toks17
-\extratabsurround=\skip117
-\backup@length=\skip118
+\extratabsurround=\skip115
+\backup@length=\skip116
 \ar@cellbox=\box52
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
@@ -132,148 +132,148 @@ Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen147
-\TX@old@table=\dimen148
-\TX@old@col=\dimen149
-\TX@target=\dimen150
-\TX@delta=\dimen151
+\TX@col@width=\dimen149
+\TX@old@table=\dimen150
+\TX@old@col=\dimen151
+\TX@target=\dimen152
+\TX@delta=\dimen153
 \TX@cols=\count268
 \TX@ftn=\toks18
 )
-\heavyrulewidth=\dimen152
-\lightrulewidth=\dimen153
-\cmidrulewidth=\dimen154
-\belowrulesep=\dimen155
-\belowbottomsep=\dimen156
-\aboverulesep=\dimen157
-\abovetopsep=\dimen158
-\cmidrulesep=\dimen159
-\cmidrulekern=\dimen160
-\defaultaddspace=\dimen161
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
 \@cmidla=\count269
 \@cmidlb=\count270
-\@aboverulesep=\dimen162
-\@belowrulesep=\dimen163
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
 \@thisruleclass=\count271
 \@lastruleclass=\count272
-\@thisrulewidth=\dimen164
-\ctableftskip=\skip119
-\ctabrightskip=\skip120
+\@thisrulewidth=\dimen166
+\ctableftskip=\skip117
+\ctabrightskip=\skip118
 \abovecolumnspenalty=\count273
 \@linestogo=\count274
 \@cellstogo=\count275
 \@cellsincolumn=\count276
 \crtok=\toks19
-\@mincolumnwidth=\dimen165
+\@mincolumnwidth=\dimen167
 \c@newflo@tctr=\count277
 \mem@margin@floatbox=\box53
-\@contcwidth=\skip121
-\@contindw=\skip122
-\abovecaptionskip=\skip123
-\belowcaptionskip=\skip124
-\subfloattopskip=\skip125
-\subfloatcapskip=\skip126
-\subfloatcaptopadj=\skip127
-\subfloatbottomskip=\skip128
-\subfloatlabelskip=\skip129
-\subfloatcapmargin=\dimen166
+\@contcwidth=\skip119
+\@contindw=\skip120
+\abovecaptionskip=\skip121
+\belowcaptionskip=\skip122
+\subfloattopskip=\skip123
+\subfloatcapskip=\skip124
+\subfloatcaptopadj=\skip125
+\subfloatbottomskip=\skip126
+\subfloatlabelskip=\skip127
+\subfloatcapmargin=\dimen168
 \c@@contsubnum=\count278
 \m@mscap@capbox=\box54
 \m@mscap@fbox=\box55
-\sidecapsep=\dimen167
-\sidecapwidth=\dimen168
-\m@m@tempdima=\dimen169
-\m@mscapraise=\dimen170
-\sidecapraise=\dimen171
-\m@mscapmainwidth=\dimen172
-\m@mscaplkern=\dimen173
-\beforeepigraphskip=\skip130
-\afterepigraphskip=\skip131
-\epigraphwidth=\skip132
-\epigraphrule=\skip133
+\sidecapsep=\dimen169
+\sidecapwidth=\dimen170
+\m@m@tempdima=\dimen171
+\m@mscapraise=\dimen172
+\sidecapraise=\dimen173
+\m@mscapmainwidth=\dimen174
+\m@mscaplkern=\dimen175
+\beforeepigraphskip=\skip128
+\afterepigraphskip=\skip129
+\epigraphwidth=\skip130
+\epigraphrule=\skip131
 LaTeX Info: Redefining \em on input line 7655.
 LaTeX Info: Redefining \emph on input line 7663.
-\tocentryskip=\skip134
-\tocbaseline=\skip135
-\cftparskip=\skip136
-\cftbeforebookskip=\skip137
-\cftbookindent=\dimen174
-\cftbooknumwidth=\dimen175
-\cftbeforepartskip=\skip138
-\cftpartindent=\skip139
-\cftpartnumwidth=\skip140
-\cftbeforechapterskip=\skip141
-\cftchapterindent=\skip142
-\cftchapternumwidth=\skip143
-\cftbeforesectionskip=\skip144
-\cftsectionindent=\skip145
-\cftsectionnumwidth=\skip146
-\cftbeforesubsectionskip=\skip147
-\cftsubsectionindent=\skip148
-\cftsubsectionnumwidth=\skip149
-\cftbeforesubsubsectionskip=\skip150
-\cftsubsubsectionindent=\skip151
-\cftsubsubsectionnumwidth=\skip152
-\cftbeforeparagraphskip=\skip153
-\cftparagraphindent=\skip154
-\cftparagraphnumwidth=\skip155
-\cftbeforesubparagraphskip=\skip156
-\cftsubparagraphindent=\skip157
-\cftsubparagraphnumwidth=\skip158
-\prechapterprecisshift=\dimen176
+\tocentryskip=\skip132
+\tocbaseline=\skip133
+\cftparskip=\skip134
+\cftbeforebookskip=\skip135
+\cftbookindent=\dimen176
+\cftbooknumwidth=\dimen177
+\cftbeforepartskip=\skip136
+\cftpartindent=\skip137
+\cftpartnumwidth=\skip138
+\cftbeforechapterskip=\skip139
+\cftchapterindent=\skip140
+\cftchapternumwidth=\skip141
+\cftbeforesectionskip=\skip142
+\cftsectionindent=\skip143
+\cftsectionnumwidth=\skip144
+\cftbeforesubsectionskip=\skip145
+\cftsubsectionindent=\skip146
+\cftsubsectionnumwidth=\skip147
+\cftbeforesubsubsectionskip=\skip148
+\cftsubsubsectionindent=\skip149
+\cftsubsubsectionnumwidth=\skip150
+\cftbeforeparagraphskip=\skip151
+\cftparagraphindent=\skip152
+\cftparagraphnumwidth=\skip153
+\cftbeforesubparagraphskip=\skip154
+\cftsubparagraphindent=\skip155
+\cftsubparagraphnumwidth=\skip156
+\prechapterprecisshift=\dimen178
 \c@maxsecnumdepth=\count279
-\bibindent=\dimen177
-\bibitemsep=\skip159
-\indexcolsep=\skip160
-\indexrule=\skip161
+\bibindent=\dimen179
+\bibitemsep=\skip157
+\indexcolsep=\skip158
+\indexrule=\skip159
 \indexmarkstyle=\toks20
 \@indexbox=\insert252
-\glossarycolsep=\dimen178
-\glossaryrule=\dimen179
-\sideparvshift=\skip162
+\glossarycolsep=\dimen180
+\glossaryrule=\dimen181
+\sideparvshift=\skip160
 \sideins=\insert251
-\sidebartopsep=\skip163
-\sidebarhsep=\skip164
-\sidebarvsep=\skip165
-\sidebarwidth=\skip166
-\footmarkwidth=\skip167
-\footmarksep=\skip168
-\footparindent=\skip169
-\footinsdim=\skip170
+\sidebartopsep=\skip161
+\sidebarhsep=\skip162
+\sidebarvsep=\skip163
+\sidebarwidth=\skip164
+\footmarkwidth=\skip165
+\footmarksep=\skip166
+\footparindent=\skip167
+\footinsdim=\skip168
 \footinsv@r=\insert250
 \@mpfootinsv@r=\insert249
 \m@m@k=\count280
-\m@m@h=\dimen180
-\m@mipn@skip=\skip171
+\m@m@h=\dimen182
+\m@mipn@skip=\skip169
 \sidefootins=\insert248
-\sidefootadjust=\skip172
-\sidefootheight=\skip173
-\sidefoothsep=\skip174
-\sidefootvsep=\skip175
-\sidefootwidth=\skip176
-\m@mdownsf=\skip177
+\sidefootadjust=\skip170
+\sidefootheight=\skip171
+\sidefoothsep=\skip172
+\sidefootvsep=\skip173
+\sidefootwidth=\skip174
+\m@mdownsf=\skip175
 \c@sidefootnote=\count281
-\sidefootmarkwidth=\skip178
-\sidefootmarksep=\skip179
-\sidefootparindent=\skip180
+\sidefootmarkwidth=\skip176
+\sidefootmarksep=\skip177
+\sidefootparindent=\skip178
 \c@pagenote=\count282
 \c@pagenoteshadow=\count283
-\mem@pn@lastkern=\skip181
+\mem@pn@lastkern=\skip179
 \every@verbatim=\toks21
 \afterevery@verbatim=\toks22
 \verbatim@line=\toks23
 \tab@position=\count284
 \verbatim@in@stream=\read2
-\verbatimindent=\skip182
+\verbatimindent=\skip180
 \verbatim@out=\write3
-\bvboxsep=\skip183
+\bvboxsep=\skip181
 \c@memfbvline=\count285
 \c@bvlinectr=\count286
-\bvnumlength=\skip184
-\fb@frw=\dimen181
-\fb@frh=\dimen182
-\FrameRule=\dimen183
-\FrameSep=\dimen184
+\bvnumlength=\skip182
+\fb@frw=\dimen183
+\fb@frh=\dimen184
+\FrameRule=\dimen185
+\FrameSep=\dimen186
 \c@cp@cntr=\count287
 \c@ism@mctr=\count288
 \c@xsm@mctr=\count289
@@ -295,14 +295,14 @@ Package textcase Info: Defining Legacy names on input line 20.
 )
 \c@figure=\count302
 \c@lofdepth=\count303
-\cftbeforefigureskip=\skip185
-\cftfigureindent=\skip186
-\cftfigurenumwidth=\skip187
+\cftbeforefigureskip=\skip183
+\cftfigureindent=\skip184
+\cftfigurenumwidth=\skip185
 \c@table=\count304
 \c@lotdepth=\count305
-\cftbeforetableskip=\skip188
-\cfttableindent=\skip189
-\cfttablenumwidth=\skip190
+\cftbeforetableskip=\skip186
+\cfttableindent=\skip187
+\cfttablenumwidth=\skip188
 Package abstract [2008/07/23] emulated by memoir.
 Package appendix [2008/07/23] emulated by memoir.
 Package booktabs [2016/05/16] emulated by memoir.
@@ -371,7 +371,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count306
 )
-\@linkdim=\dimen185
+\@linkdim=\dimen187
 \Hy@linkcounter=\count307
 \Hy@pagecounter=\count308
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -398,15 +398,15 @@ Package hyperref Info: Bookmarks ON on input line 4410.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4748.
-\XeTeXLinkMargin=\dimen186
+\XeTeXLinkMargin=\dimen188
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count311
-\Field@Width=\dimen187
-\Fld@charsize=\dimen188
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -443,12 +443,12 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip191
+\Hy@SectionHShift=\skip189
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/memhfixc.sty
-Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir class
+Package: memhfixc 2022/11/17 v1.20 nameref/hyperref package fixes for memoir class
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \nameref on input line 106.
 \c@memhycontfloat=\count319
 \c@Hpagenote=\count320
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
@@ -459,7 +459,7 @@ File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 )) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/10/23 3.82 The Babel package
 \babel@savecnt=\count322
-\U@D=\dimen189
+\U@D=\dimen191
 \l@unhyphenated=\language4
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def))
 \bbl@readstream=\read3
@@ -471,8 +471,8 @@ Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
 Package babel Info: Making " an active character on input line 143.
 )) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip192
-\enit@outerparindent=\dimen190
+\labelindent=\skip190
+\enit@outerparindent=\dimen192
 \enit@toks=\toks25
 \enit@inbox=\box57
 \enit@count@id=\count324
@@ -481,14 +481,14 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count326
 \calc@Bcount=\count327
-\calc@Adimen=\dimen191
-\calc@Bdimen=\dimen192
-\calc@Askip=\skip193
-\calc@Bskip=\skip194
+\calc@Adimen=\dimen193
+\calc@Bdimen=\dimen194
+\calc@Askip=\skip191
+\calc@Bskip=\skip192
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count328
-\calc@Cskip=\skip195
+\calc@Cskip=\skip193
 )
 
 ******************************************************
@@ -502,18 +502,18 @@ Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 7pt and 42.9055pt
-Sidecapsep and sidecapwidth: 7pt and 92pt
-Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
 Sidebarvsep and sidebartopsep: 14.5pt and 0pt
 Sidebarheight: 590.14995pt
-Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 \c@abntex@bookmarkcounter=\count329
-\cftlastnumwidth=\skip196
-\chapternamenumlength=\skip197
-\ABNTEXcitacaorecuo=\skip198
+\cftlastnumwidth=\skip194
+\chapternamenumlength=\skip195
+\ABNTEXcitacaorecuo=\skip196
 \c@alineasi=\count330
 \c@alineasii=\count331
 \enitdp@alineas=\count332
@@ -521,9 +521,9 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 \enitdp@subalineas=\count334
 \c@incisosi=\count335
 \enitdp@incisos=\count336
-\ABNTEXsignwidth=\skip199
-\ABNTEXsignthickness=\skip256
-\ABNTEXsignskip=\skip257
+\ABNTEXsignwidth=\skip197
+\ABNTEXsignthickness=\skip198
+\ABNTEXsignskip=\skip199
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -537,8 +537,8 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen193
-\Gin@req@width=\dimen194
+\Gin@req@height=\dimen195
+\Gin@req@width=\dimen196
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -556,9 +556,9 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip258
-\fb@frw=\dimen195
-\fb@frh=\dimen196
+\OuterFrameSep=\skip256
+\fb@frw=\dimen197
+\fb@frh=\dimen198
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 2021/01/29 v2.0g defines alltt environment
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
@@ -618,7 +618,7 @@ LaTeX Info: Redefining \noprotrusionifhmode on input line 1045.
 LaTeX Info: Redefining \leftprotrusion on input line 1046.
 LaTeX Info: Redefining \rightprotrusion on input line 1056.
 LaTeX Info: Redefining \textls on input line 1234.
-\MT@outer@kern=\dimen197
+\MT@outer@kern=\dimen199
 LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
 \MT@listname@count=\count338
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
@@ -649,8 +649,8 @@ Package: backref 2021/02/04 v1.41 Bibliographical back referencing
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip259
-\ABCIauxlen=\skip260
+\minimumbiblabelwidth=\skip257
+\ABCIauxlen=\skip258
 \c@ABCIaux=\count346
 \c@ABCImax=\count347
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -660,12 +660,12 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip261
+\biblabelsep=\skip259
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks29
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 158.
+Package hyperref Info: Option `colorlinks' set `true' on input line 159.
 \logistic-regression@idxfile=\write4
 \openout4 = `logistic-regression.idx'.
 
@@ -673,38 +673,38 @@ Writing index file logistic-regression.idx
 (./logistic-regression.aux)
 \openout1 = `logistic-regression.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 182.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 182.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 183.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-Package hyperref Info: Link coloring ON on input line 182.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+Package hyperref Info: Link coloring ON on input line 183.
 \myptabbox=\box60
-\myptabboxwidth=\skip262
-LaTeX Info: Redefining \microtypecontext on input line 182.
-Package microtype Info: Applying patch `item' on input line 182.
-Package microtype Info: Applying patch `toc' on input line 182.
-Package microtype Info: Applying patch `eqnum' on input line 182.
-Package microtype Info: Applying patch `footnote' on input line 182.
+\myptabboxwidth=\skip260
+LaTeX Info: Redefining \microtypecontext on input line 183.
+Package microtype Info: Applying patch `item' on input line 183.
+Package microtype Info: Applying patch `toc' on input line 183.
+Package microtype Info: Applying patch `eqnum' on input line 183.
+Package microtype Info: Applying patch `footnote' on input line 183.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -713,7 +713,7 @@ Package microtype Info: No adjustment of kerning.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 199.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 200.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -723,73 +723,92 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 [1
 
-] [2
-
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 207.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 208.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 207.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 208.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 207.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 208.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 207.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 208.
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 207.
+(Font)              <12> on input line 208.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 207.
+(Font)              <8> on input line 208.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 207.
+(Font)              <6> on input line 208.
 [1
+
 
 
 
 ] [2
 
-] [3] [4
 
-] (./logistic-regression.lof) [5] [6
+]
+Missing character: There is no – ("2013) in font ec-lmri12!
+[3
 
-] (./logistic-regression.lot) [7] [8
+] [4
 
-] [9
+] (./logistic-regression.lof) [5
+
+] (./logistic-regression.lot) [6
+
+] [7
+
+
+] [8
+
+
+] (./logistic-regression.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 29.
+) [9
 
 ] [10
+
 
 ] [11
 
 ] [12
 
-] (./logistic-regression.toc) [13] [14
-
-] [15
-
-] [16
-
-] [17] [18
-
-] [19] [20
-
 ] (./logistic-regression.bbl (./logistic-regression.brf)
 \tf@brf=\write5
 \openout5 = `logistic-regression.brf'.
 
-[21] [22
+[13
 
 ]
 bibitemlist
+) [14
 
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
+]
 
-) (./logistic-regression.ind) [23]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 400.
+
+[15
+
+
+] [16
+
+] (./logistic-regression.ind) [17
+
+]
 \tf@lof=\write6
 \openout6 = `logistic-regression.lof'.
 
@@ -801,15 +820,15 @@ LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
 (./logistic-regression.aux)
 Package rerunfilecheck Info: File `logistic-regression.brf' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 925611E271B5A1C3DFCFA315CADD9563;51.
  ) 
 Here is how much of TeX's memory you used:
- 17214 strings out of 477627
- 284977 string characters out of 5838803
- 773211 words of memory out of 5000000
- 38125 multiletter control sequences out of 15000+600000
- 514872 words of font info for 54 fonts, out of 8000000 for 9000
+ 17278 strings out of 477627
+ 286027 string characters out of 5838803
+ 774012 words of memory out of 5000000
+ 38182 multiletter control sequences out of 15000+600000
+ 530323 words of font info for 65 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 87i,12n,90p,1064b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,12n,90p,1064b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on logistic-regression.pdf (25 pages).
+Output written on logistic-regression.pdf (18 pages).

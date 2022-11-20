@@ -2,7 +2,8 @@
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	twoside,			% para impressão em recto e verso. Oposto a oneside
+	%twoside,			% para impressão em recto e verso. Oposto a oneside
+	oneside,      % para impressão direta das páginas. Oposto a twoside
 	a4paper,			% tamanho do papel.
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -81,7 +82,7 @@
 \tipotrabalho{Tese (Doutorado)}
 % O preambulo deve conter o tipo do trabalho, o objetivo,
 % o nome da instituição e a área de concentração
-\preambulo{Relatório de Estágio Supervisionado apresentado como Trabalho de Pesquisa à Coordenação do Curso de Bacharelado em Estatística da Universidade Federal de Rondônia como requisito .}
+\preambulo{Relatório de Estágio Supervisionado apresentado como Trabalho de Pesquisa à Coordenação do Curso de Bacharelado em Estatística da Universidade Federal de Rondônia.}
 % ---
 
 % ---
@@ -159,8 +160,29 @@
 %  ``Se exigido pela entidade, apresentar os dados curriculares do autor em
 %     folha ou página distinta após a folha de rosto.''
 % ---
+\begin{agradecimentos} 
+  Os agradecimentos... 
+\end{agradecimentos}
+% ---
+% Epígrafe
 
-%--- resumo em português--
+\begin{epigrafe} 
+  \vspace*{\fill} 
+  \begin{flushright} 
+  \textit{"Os livros servem para nos lembrar quanto somos estúpidos e tolos. 
+      \\ São o guarda pretoriano de César, cochichando enquanto o desfile ruge 
+      \\ pela avenida: – Lembre-se, César, tu és mortal. A maioria de nós não 
+      \\ pode sair correndo por aí, falar com todo mundo, conhecer todas as 
+      \\ cidades do mundo, não temos tempo, dinheiro ou tantos amigos assim. 
+      \\ As coisas que você está procurando, Montag, estão no mundo, mas a 
+      \\ única possibilidade que o sujeito comum terá de ver noventa e nove 
+      \\ por cento delas está num livro". 
+      \\ - Fahrenheit 451 de Ray Douglas Bradbury} 
+  \end{flushright} 
+\end{epigrafe}
+% ---
+
+% --- resumo em português--
 \begin{resumo} 
   O objetivo deste trabalho é aplicar o modelo de regressão logística a dados
   de cartão de crédito de uma instituição financeira do estado de Rondônia.
@@ -202,7 +224,7 @@
   \item[$ \Gamma $] Letra grega Gama
   \item[$ \Lambda $] Lambda
   \item[$ \zeta $] Letra grega minúscula zeta
-  \item[$ \in $] Pertence
+  \item[$ \Pi $] Produtório
 \end{simbolos}
 % ---
 
@@ -231,10 +253,33 @@
 
 
 
+
+
+
+
 % ----------------------------------------------------------
 % Capitulo de textual
 % ----------------------------------------------------------
 \chapter{Modelo de Regressão Logística}
+
+  
+A regressão logística tem como principal uso modelar uma variável binária $(0,1)$,
+com base em mais variáveis, estas chamadas de variáveis explicativas ou preditoras.
+E comumentemente a variável resposta ou dependente, assim chama-se a variável
+binária do modelo. Conforme \cite{hilbe2016practical}, o modelo melhor ajustado 
+aos dados é assumido que:
+\begin{itemize}
+  \item Não há correlação entre as variáveis preditoras;
+  \item Estejam significativamente relacionados com a resposta;
+  \item Que as observações dos dados não estejam correlacionados com a resposta.
+\end{itemize}
+  
+A resposta do modelo dito está conveniente a uma distribuição subjacente, ou seja,
+segue uma distribuição de Bernoulli. Como esta distribuição é um subconjunto da distribuição 
+Binomial que a função de probabilidade pode ser expressa:
+\begin{equation}
+  f(x;\theta) = \prod_{i = 1}^{n}\theta_{i}^{x_i}(1 - \theta_{i})^{1 - x_i}
+\end{equation}
 
 
 
@@ -275,6 +320,9 @@
 
 \chapter{Considerações Finais}
 
+
+
+
 % ----------------------------------------------------------
 \bibliography{abntex2-modelo-references}
 
@@ -286,7 +334,7 @@
 %
 %\glossary
 
-\begin{comment}
+
 % ----------------------------------------------------------
 % Apêndices
 % ----------------------------------------------------------
@@ -300,21 +348,37 @@
 \partapendices
 
 % ----------------------------------------------------------
-\chapter{Quisque libero justo}
+\chapter{DESCRIÇÃO DAS VARIÁVEIS}
 % ----------------------------------------------------------
 
-\lipsum[50]
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrr}
+  \hline
+  Country: & United States & \\
+ \hline Method: & Regression &  \\
+ \hline Models: & RMSE Result &  \\
+ \hline & A & B \\
+ \hline
+financial & 1.23 & 1.19 \\
+  macro & 1.50 & 1.40 \\
+   \hline
+\end{tabular} \caption{Descrião das variáveis}
+\end{table}
+
 
 % ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+\chapter{SCRIPT R}
 % ----------------------------------------------------------
-\lipsum[55-57]
+<<script, >>=
+
+@
+
 
 \end{apendicesenv}
 % ---
 
-
+\begin{comment}
 % ----------------------------------------------------------
 % Anexos
 % ----------------------------------------------------------
