@@ -1,0 +1,43 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeUppercase []{Introdução}}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objetivos}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}}{9}{section.1.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeUppercase []{REFERENCIAL TEÓRICO}}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Credit Scoring}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Breve Introdução sobre Machine Learning}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Modelo de Regressão Logística}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Interpretação dos Paramêtros}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Estimação dos Paramêntros}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Testes de Significância}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Seleção de Variáveis}{12}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Desempenho dos Modelos}{12}{subsection.2.3.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeUppercase []{Metodologia}}{13}{chapter.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeUppercase []{Resultados e Discussões}}{14}{chapter.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeUppercase []{Considerações Finais}}{15}{chapter.5}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeUppercase []{Refer\^encias}}{16}{section*.12}%
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{17}{section*.13}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeUppercase []{DESCRIÇÃO DAS VARIÁVEIS}}{18}{appendix.A}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeUppercase []{SCRIPT R}}{19}{appendix.B}%
+\vspace {\cftbeforechapterskip }

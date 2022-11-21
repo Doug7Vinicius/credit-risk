@@ -32,7 +32,8 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
-
+\usepackage{booktabs}
+\usepackage{mathptmx}
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
@@ -160,9 +161,9 @@
 %  ``Se exigido pela entidade, apresentar os dados curriculares do autor em
 %     folha ou página distinta após a folha de rosto.''
 % ---
-\begin{agradecimentos} 
-  Os agradecimentos... 
-\end{agradecimentos}
+%\begin{agradecimentos} 
+%  Os agradecimentos... 
+%\end{agradecimentos}
 % ---
 % Epígrafe
 
@@ -255,6 +256,8 @@
 O objetivo deste trabalho é desenvolver um modelo de previsão de risco de inadimplência 
 dos tomadores de cartões de créditos de uma instituição Financeira do Estado de Rondônia.
 
+  \section{}
+
 
 
 
@@ -291,9 +294,13 @@ algoritmo.
       \legend{Fonte: https://becominghuman.ai/an-introduction-to-machine-learning-7db04da817c4}
     \end{figure}
   
+
+
+
   \section{Modelo de Regressão Logística}
+
   
-A regressão logística tem como principal uso modelar uma variável binária $(0,1)$,
+A regressão logística tem como principal uso modelar de uma variável binária $(0,1)$,
 com base em mais variáveis, estas chamadas de variáveis explicativas ou preditoras.
 E comumentemente a variável resposta ou dependente, assim chama-se a variável
 binária do modelo. Conforme \cite{hilbe2016practical}, o melhor modelo ajustado 
@@ -301,18 +308,71 @@ aos dados é assumido que:
 \begin{itemize}
   \item Não há correlação entre as variáveis preditoras;
   \item Estejam significativamente relacionados com a resposta;
-  \item Que as observações dos dados não estejam correlacionados com a resposta.
+  \item Que as observações dos dados não interferem entre si.
 \end{itemize}
   
 A resposta do modelo dito está conveniente a uma distribuição subjacente, ou seja,
-segue uma distribuição de Bernoulli. Como esta distribuição é um subconjunto da distribuição 
-Binomial que a função de probabilidade pode ser expressa:
-\begin{equation}
-  f(x;\theta) = \prod_{i = 1}^{n}\theta_{i}^{x_i}(1 - \theta_{i})^{1 - x_i}
+segue uma distribuição de Bernoulli. Concordantemente com \cite{bolfarine2001introduccao}, 
+esta distribuição é um distribuição particular da distribuição Binomial que 
+a função de probabilidade pode ser expressa:
+\begin{equation}\label{bernoulli}
+  f(x;\theta) = \theta_{i}^{x_i}(1 - \theta_{i})^{1 - x_i}, \quad x_i = 0,1,
 \end{equation}
 
+\noindent em que $i = 1,\cdots,n$. Estes modelos são comumente empregados em situações
+que a resposta é dicotômica.
+
+Porque não utilizar o modelo de regressão linear? Suponhamos uma situação, estamos 
+tentando prever a condição médica de um paciente com três diagnósticos possíveis: 
+acidente vascular cerebral (AVC), overdose de drogas e convulsões epilépticas. 
+Podemos dar a essas condições valores como uma variável de resposta quantitativa:
+
+$$Y = \left\{
+\begin{array}{rcl}
+1, & \textrm{se AVC}\\
+2, & \textrm{se overdose}\\
+3, & \textrm{se convulsões}
+\end{array}
+\right.$$
+
+Com essa converssão implica um ordenação dos resultados possíveis de $Y$, mas 
+não há ordenação, pois se houvesse um ordenamento natural de leve, moderado e 
+grave, da consideração a diferença de leve a moderado e entre moderado e grave 
+seriam semelhantes os intervalos. Infelizmente, em geral, não há uma maneira de converter
+uma variável resposta qualitativa com mais de dois níveis em uma resposta quantitativa 
+pronta para regressão linear.
+
+Se tivermos uma resposta qualitativa binária (dois níveis), por exemplo, duas condições
+médicas do paciente e utilizando a variável \textit{dummy} para codificar a resposta:
+
+$$
+Y = \left\{
+\begin{array}{rcl}
+1, & \textrm{se AVC}\\
+2, & \textrm{se overdose}
+\end{array}
+\right.
+$$
+
+Mesmo usando a regressão linear para utilizar para obter uma estimativa de probabilidade
+do resultado, quebramos um pressuposto, pois algumas estimativas podem estar fora do
+intervalo $[0,1]$.
 
 
+E uma forma capaz de ter uma linha em forma de \textit{"S"} para prever as probabilidades 
+e descrever essa linha curva com os coeficientes da regressão linear.
+
+Presuma que o modelo linear tradicional tenha a forma: 
+
+\begin{equation}
+  y_{i} = \mathbf{x'}_i \beta + \varepsilon_i
+\end{equation}
+
+\noindent em que $\mathbf{x'}_i = [1,x_{i1},x_{i2},\cdots,x_{ik}]$, $\beta' = 
+[\beta_0,\beta_1,\beta_2,\cdots,\beta_k]$ e a variável resposta tem valores entre
+o intervalo $[0,1]$. Assumiremos qeu a variável resposta é uma variável aleatória 
+com distribuição de Bernoulli com função de probabilidade dita anteriormente pela 
+equação \ref{bernoulli}.
 
 
       \subsection{Interpretação dos Paramêtros}
@@ -340,7 +400,7 @@ Binomial que a função de probabilidade pode ser expressa:
       \subsection{Desempenho dos Modelos}
 
 
-\chapter{Metodologia e Dados}
+\chapter{Metodologia}
 
 
 
@@ -385,22 +445,45 @@ Binomial que a função de probabilidade pode ser expressa:
 % ----------------------------------------------------------
 \chapter{DESCRIÇÃO DAS VARIÁVEIS}
 % ----------------------------------------------------------
-
-\begin{tabular}{ccc} 
-  \hline 
-  Coluna 1 & Coluna 2 & Coluna 3 \\ 
-  \hline 
-  Coluna 1 Coluna 2 Coluna 3 A B D E C F A & B & C \\
-  D & E & F \\ 
-  \hline 
-\end{tabular}
-
+\begin{center}
+  \begin{tabular}{l r r r r}
+    \toprule
+    Variável      & Descrição da Variável & Tipo de Variável & N$^{o}$ de Categorias & Categorias\\
+    \hline
+    Sexo          &         &         &       &       \\
+    \hline
+    Idade         &         &         &       &       \\
+    \hline
+    Escolaridade  &         &         &       &       \\
+    \hline
+    Renda         &         &         &       &       \\
+    \hline
+    SM30          &         &         &       &       \\
+    \hline
+    SM60          &         &         &       &       \\
+    \hline
+    SM90          &         &         &       &       \\
+    \hline
+    SM180          &         &         &       &       \\
+    \hline
+    SM360          &         &         &       &       \\
+    \hline
+    Limite          &         &         &       &       \\
+    \hline
+    Status          &         &         &       &       \\
+    \bottomrule
+  \end{tabular}
+\end{center}
 
 % ----------------------------------------------------------
 \chapter{SCRIPT R}
 % ----------------------------------------------------------
 <<script, >>=
-
+##%######################################################%##
+############################################################
+####                 REGRESSÃO LOGISTICA                ####
+############################################################
+##%######################################################%##
 @
 
 
