@@ -38,5 +38,9 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeUppercase []{SCRIPT R}}{19}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeUppercase []{Script em R}}{19}{appendix.B}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeUppercase []{Script em Python}}{21}{appendix.C}%
 \vspace {\cftbeforechapterskip }

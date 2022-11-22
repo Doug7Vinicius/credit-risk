@@ -498,7 +498,7 @@ $$
 \end{center}
 
 % ----------------------------------------------------------
-\chapter{SCRIPT R}
+\chapter{Script em R}
 % ----------------------------------------------------------
 <<script, >>=
 ##%######################################################%##
@@ -530,6 +530,8 @@ kbl(mtcars[1:10,1:6], caption = "GroupRows", booktabs = T) %>%
 
 @
 
+
+\chapter{Script em Python}
 
 \end{apendicesenv}
 % ---

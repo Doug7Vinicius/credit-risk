@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.13)  22 NOV 2022 02:38
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.13)  22 NOV 2022 02:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,9 +869,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 563.
-(./logistic-regression.ind) [19
+[19
 
-] [20]
+] [20] (./logistic-regression.ind) [21
+
+]
 \tf@lof=\write6
 \openout6 = `logistic-regression.lof'.
 
@@ -886,12 +888,12 @@ Package rerunfilecheck Info: File `logistic-regression.brf' has not changed.
 (rerunfilecheck)             Checksum: 212D1D216936CB7429953FFF83D7AFD2;171.
  ) 
 Here is how much of TeX's memory you used:
- 17495 strings out of 477627
- 289601 string characters out of 5838803
- 778213 words of memory out of 5000000
- 38390 multiletter control sequences out of 15000+600000
+ 17496 strings out of 477627
+ 289607 string characters out of 5838803
+ 778216 words of memory out of 5000000
+ 38391 multiletter control sequences out of 15000+600000
  522441 words of font info for 87 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  87i,13n,90p,1064b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on logistic-regression.pdf (21 pages).
+Output written on logistic-regression.pdf (22 pages).
