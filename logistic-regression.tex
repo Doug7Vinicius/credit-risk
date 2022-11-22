@@ -236,8 +236,10 @@
 
 % --- resumo em português--
 \begin{resumo} 
-  O objetivo deste trabalho é aplicar o modelo de regressão logística a dados
-  de cartão de crédito de uma instituição financeira do estado de Rondônia.
+  O objetivo deste trabalho tem como aplicar uma análise de regressão logística a dados
+  de cartões de crédito de uma instituição financeira do estado de Rondônia, de forma
+  gerar um modelo logístico capaz de prever a probabilidade de inadimplência ou risco
+  de o tomador não honrar com o crédito.
   \vspace{\onelineskip} 
   \noindent
   
@@ -306,8 +308,10 @@
 
 O objetivo deste trabalho é desenvolver um modelo de previsão de risco de inadimplência 
 dos tomadores de cartões de créditos de uma instituição Financeira do Estado de Rondônia.
+Resumidamente, em poucas palavras, estamos interessados em construir um modelo preditivo
+que propõe efetivamente a decisão sobre o risco de crédito (ou modelo de Credit Scoring).
 
-  \section{}
+Neste contexto, vamos relacionar os seguintes objetivos específicos:
 
 
 
@@ -320,7 +324,7 @@ dos tomadores de cartões de créditos de uma instituição Financeira do Estado
 \chapter{REFERENCIAL TEÓRICO}
 
 
-  \section{Credit Scoring}
+  \section{Modelo de Credit Scoring}
   
   
   
@@ -332,11 +336,9 @@ um conjunto de regras com algoritmos e procedimentos que tem como objetivo de
 extrair informações apartir dos dados e dessas informações tomar uma decisão.
 
 Segundo \cite{goodfellow2016deep}, os algoritmos de Machine Learning podem ser 
-amplamente categorizados como aprendizados Supervisionado e Não-Supervisionados, 
-sitentizando essa diferença, é o tipo de experiência durante o aprendizado do 
-algoritmo.
+amplamente categorizados pelos tipos de aprendizagem, sitentizando essas diferenças
+no tipo de experiência durante o aprendizado do algoritmo.
 
-  
     \begin{figure}
       \caption{\label{img1}Machine Learning e suas aplicações}
       \begin{center}
@@ -345,7 +347,16 @@ algoritmo.
       \legend{Fonte: https://becominghuman.ai/an-introduction-to-machine-learning-7db04da817c4}
     \end{figure}
   
-
+\begin{itemize}
+  \item Supervisionado: O algoritmo procura relação entre as variáveis preditoras e 
+  a variável resposta de um \textit{dataset}. Através dessas associação é possível 
+  realizar previsões quando o algoritmo é apresentado novos dados;
+  \item Não-Supervisionado: aqui o algoritmo tem como objetivo agrupar os dados com 
+  base em características similares, descartando à apresentação da variavél resposta ao 
+  algoritmo;
+  \item Aprendizagem por reforço: o algoritmo aprende com base nas interações com o 
+  ambiente. Não são apresentadas as ações que devem ser tomadas, apenas as consequências das ações.
+\end{itemize}
 
 
   \section{Modelo de Regressão Logística}
@@ -425,6 +436,17 @@ o intervalo $[0,1]$. Assumiremos qeu a variável resposta é uma variável aleat
 com distribuição de Bernoulli com função de probabilidade dita anteriormente pela 
 equação \ref{bernoulli}.
 
+Uma vez que a $E(\varepsilon_i) = 0$, o valor esperado da variável resposta é:
+\begin{equation}
+  E(y_i) = 1(\pi_i) + 0(1 - \pi_i)= \pi_i
+\end{equation}
+
+\noindent o que implica em 
+
+
+$$
+E(y_i) = \mathbf{x_i'}\beta = \pi_i
+$$
 
       \subsection{Interpretação dos Paramêtros}
 
@@ -537,8 +559,66 @@ equação \ref{bernoulli}.
 \hlcom{####                 REGRESSÃO LOGISTICA                ####}
 \hlcom{############################################################}
 \hlcom{##%######################################################%##}
+
+\hlkwd{library}\hlstd{(kableExtra)}
+\hlstd{dt} \hlkwb{<-} \hlstd{mtcars[}\hlnum{1}\hlopt{:}\hlnum{5}\hlstd{,} \hlnum{1}\hlopt{:}\hlnum{6}\hlstd{]}
+
+\hlstd{text_tbl}\hlkwb{<-}\hlkwd{data.frame}\hlstd{(}
+  \hlkwc{Items}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"Item1"}\hlstd{,}\hlstr{"Item2"}\hlstd{,}\hlstr{"Item3"}\hlstd{),}
+  \hlkwc{Features}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"bla bla"}\hlstd{,} \hlstr{"..."}\hlstd{,} \hlstr{"bla ..."}
+  \hlstd{)}
+\hlstd{)}
+
+\hlkwd{kbl}\hlstd{(text_tbl,}\hlkwc{booktabs}\hlstd{=T)} \hlopt{%>%}
+  \hlkwd{kable_styling}\hlstd{(}\hlkwc{full_width}\hlstd{=F)} \hlopt{%>%}
+  \hlkwd{column_spec}\hlstd{(}\hlnum{1}\hlstd{,}\hlkwc{bold}\hlstd{=T,}\hlkwc{color}\hlstd{=}\hlstr{"red"}\hlstd{)} \hlopt{%>%}
+  \hlkwd{column_spec}\hlstd{(}\hlnum{2}\hlstd{,}\hlkwc{width}\hlstd{=}\hlstr{"30em"}\hlstd{)}
 \end{alltt}
-\end{kframe}
+\end{kframe}\begin{table}
+\centering
+\begin{tabular}[t]{>{}l>{\raggedright\arraybackslash}p{30em}}
+\toprule
+Items & Features\\
+\midrule
+\textcolor{red}{\textbf{Item1}} & bla bla\\
+\textcolor{red}{\textbf{Item2}} & ...\\
+\textcolor{red}{\textbf{Item3}} & bla ...\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{kframe}\begin{alltt}
+\hlkwd{kbl}\hlstd{(mtcars[}\hlnum{1}\hlopt{:}\hlnum{10}\hlstd{,}\hlnum{1}\hlopt{:}\hlnum{6}\hlstd{],} \hlkwc{caption} \hlstd{=} \hlstr{"GroupRows"}\hlstd{,} \hlkwc{booktabs} \hlstd{= T)} \hlopt{%>%}
+  \hlkwd{kable_styling}\hlstd{()} \hlopt{%>%}
+  \hlkwd{pack_rows}\hlstd{(}\hlstr{"Group1"}\hlstd{,}\hlnum{4}\hlstd{,}\hlnum{7}\hlstd{)} \hlopt{%>%}
+  \hlkwd{pack_rows}\hlstd{(}\hlstr{"Group2"}\hlstd{,}\hlnum{8}\hlstd{,}\hlnum{10}\hlstd{)}
+\end{alltt}
+\end{kframe}\begin{table}
+
+\caption{\label{tab:script}GroupRows}
+\centering
+\begin{tabular}[t]{lrrrrrr}
+\toprule
+  & mpg & cyl & disp & hp & drat & wt\\
+\midrule
+Mazda RX4 & 21.0 & 6 & 160.0 & 110 & 3.90 & 2.620\\
+Mazda RX4 Wag & 21.0 & 6 & 160.0 & 110 & 3.90 & 2.875\\
+Datsun 710 & 22.8 & 4 & 108.0 & 93 & 3.85 & 2.320\\
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Group1}}\\
+\hspace{1em}Hornet 4 Drive & 21.4 & 6 & 258.0 & 110 & 3.08 & 3.215\\
+\hspace{1em}Hornet Sportabout & 18.7 & 8 & 360.0 & 175 & 3.15 & 3.440\\
+\hspace{1em}Valiant & 18.1 & 6 & 225.0 & 105 & 2.76 & 3.460\\
+\hspace{1em}Duster 360 & 14.3 & 8 & 360.0 & 245 & 3.21 & 3.570\\
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Group2}}\\
+\hspace{1em}Merc 240D & 24.4 & 4 & 146.7 & 62 & 3.69 & 3.190\\
+\hspace{1em}Merc 230 & 22.8 & 4 & 140.8 & 95 & 3.92 & 3.150\\
+\hspace{1em}Merc 280 & 19.2 & 6 & 167.6 & 123 & 3.92 & 3.440\\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \end{knitrout}
 
 

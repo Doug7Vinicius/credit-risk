@@ -185,8 +185,10 @@
 
 % --- resumo em português--
 \begin{resumo} 
-  O objetivo deste trabalho é aplicar o modelo de regressão logística a dados
-  de cartão de crédito de uma instituição financeira do estado de Rondônia.
+  O objetivo deste trabalho tem como aplicar uma análise de regressão logística a dados
+  de cartões de crédito de uma instituição financeira do estado de Rondônia, de forma
+  gerar um modelo logístico capaz de prever a probabilidade de inadimplência ou risco
+  de o tomador não honrar com o crédito.
   \vspace{\onelineskip} 
   \noindent
   
@@ -255,8 +257,10 @@
 
 O objetivo deste trabalho é desenvolver um modelo de previsão de risco de inadimplência 
 dos tomadores de cartões de créditos de uma instituição Financeira do Estado de Rondônia.
+Resumidamente, em poucas palavras, estamos interessados em construir um modelo preditivo
+que propõe efetivamente a decisão sobre o risco de crédito (ou modelo de Credit Scoring).
 
-  \section{}
+Neste contexto, vamos relacionar os seguintes objetivos específicos:
 
 
 
@@ -269,7 +273,7 @@ dos tomadores de cartões de créditos de uma instituição Financeira do Estado
 \chapter{REFERENCIAL TEÓRICO}
 
 
-  \section{Credit Scoring}
+  \section{Modelo de Credit Scoring}
   
   
   
@@ -281,11 +285,9 @@ um conjunto de regras com algoritmos e procedimentos que tem como objetivo de
 extrair informações apartir dos dados e dessas informações tomar uma decisão.
 
 Segundo \cite{goodfellow2016deep}, os algoritmos de Machine Learning podem ser 
-amplamente categorizados como aprendizados Supervisionado e Não-Supervisionados, 
-sitentizando essa diferença, é o tipo de experiência durante o aprendizado do 
-algoritmo.
+amplamente categorizados pelos tipos de aprendizagem, sitentizando essas diferenças
+no tipo de experiência durante o aprendizado do algoritmo.
 
-  
     \begin{figure}
       \caption{\label{img1}Machine Learning e suas aplicações}
       \begin{center}
@@ -294,7 +296,16 @@ algoritmo.
       \legend{Fonte: https://becominghuman.ai/an-introduction-to-machine-learning-7db04da817c4}
     \end{figure}
   
-
+\begin{itemize}
+  \item Supervisionado: O algoritmo procura relação entre as variáveis preditoras e 
+  a variável resposta de um \textit{dataset}. Através dessas associação é possível 
+  realizar previsões quando o algoritmo é apresentado novos dados;
+  \item Não-Supervisionado: aqui o algoritmo tem como objetivo agrupar os dados com 
+  base em características similares, descartando à apresentação da variavél resposta ao 
+  algoritmo;
+  \item Aprendizagem por reforço: o algoritmo aprende com base nas interações com o 
+  ambiente. Não são apresentadas as ações que devem ser tomadas, apenas as consequências das ações.
+\end{itemize}
 
 
   \section{Modelo de Regressão Logística}
@@ -374,6 +385,17 @@ o intervalo $[0,1]$. Assumiremos qeu a variável resposta é uma variável aleat
 com distribuição de Bernoulli com função de probabilidade dita anteriormente pela 
 equação \ref{bernoulli}.
 
+Uma vez que a $E(\varepsilon_i) = 0$, o valor esperado da variável resposta é:
+\begin{equation}
+  E(y_i) = 1(\pi_i) + 0(1 - \pi_i)= \pi_i
+\end{equation}
+
+\noindent o que implica em 
+
+
+$$
+E(y_i) = \mathbf{x_i'}\beta = \pi_i
+$$
 
       \subsection{Interpretação dos Paramêtros}
 
@@ -484,6 +506,28 @@ equação \ref{bernoulli}.
 ####                 REGRESSÃO LOGISTICA                ####
 ############################################################
 ##%######################################################%##
+
+library(kableExtra)
+dt <- mtcars[1:5, 1:6]
+
+text_tbl<-data.frame(
+  Items=c("Item1","Item2","Item3"), 
+  Features=c("bla bla", "...", "bla ..."
+  ) 
+) 
+
+kbl(text_tbl,booktabs=T) %>% 
+  kable_styling(full_width=F) %>% 
+  column_spec(1,bold=T,color="red") %>% 
+  column_spec(2,width="30em")
+
+
+kbl(mtcars[1:10,1:6], caption = "GroupRows", booktabs = T) %>% 
+  kable_styling() %>% 
+  pack_rows("Group1",4,7) %>%
+  pack_rows("Group2",8,10)
+
+
 @
 
 
