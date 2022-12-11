@@ -5,7 +5,8 @@
 ##%######################################################%##
 
 # Definindo o diretório
-setwd("C:\\Users\\Leticia\\Google Drive\\Cursos Ministrados\\(2020) Análise Inteligente de Dados")
+setwd("C:/Users/Douglas/Documents/TRABALHO/credit-risk/script")
+getwd()
 
 # Carrega a biblioteca para obter o banco de dados
 library(titanic)
@@ -26,7 +27,7 @@ str(train)
 # Parch: Número de pais / filhos a bordo
 # Fare: Tarifa
 # Embarked: Porto de embarque C = Cherbourg, Q = Queenstown, S = Southampton
-# Pclass: Classe do navio
+# Pclass: Classe do navio.
 
 ## Verificar se há NA nos dados
 colSums(is.na(train))
@@ -151,8 +152,11 @@ AIC(mod3)
 # o gráfico marginal do modelo. A variável resposta é plotada em relação à variável 
 # explicativa. Os dados observados e a previsão do modelo são mostrados em linhas azuis
 # e vermelhas, respectivamente. 
-marginalModelPlots(mod2) 
+marginalModelPlots(mod2)
 
+
+marginalModelPlots(mod1) 
+marginalModelPlots(mod3) 
 # Outliers
 car::outlierTest(mod2) # não há outliers
 
