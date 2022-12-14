@@ -86,9 +86,11 @@
 \usepackage[table]{xcolor}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{amsmath}
 \usepackage{float}
 \usepackage{here}
 \usepackage{listings}
+\usepackage{booktabs}
 
 \usepackage{xcolor}
 
@@ -120,6 +122,8 @@
 
 %"mystyle" code listing set
 \lstset{style=mystyle}
+
+
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
@@ -280,7 +284,7 @@
   \vspace{\onelineskip} 
   \noindent
   
-  \textbf{Palavras-chaves}: Credit Scoring, Probabilidade de Default, KRegressão Logístico. 
+  \textbf{Palavras-chaves}: Credit Scoring, Machine Learning, Probabilidade de Default, Regressão Logístico. 
 \end{resumo}
 
 % ---
@@ -302,22 +306,22 @@
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
-\begin{siglas}
-  \item[ABNT] Associação Brasileira de Normas Técnicas
-  \item[abnTeX] ABsurdas Normas para TeX
-\end{siglas}
+%\begin{siglas}
+%  \item[ABNT] Associação Brasileira de Normas Técnicas
+%  \item[abnTeX] ABsurdas Normas para TeX
+%\end{siglas}
 % ---
 
 % ---
 % inserir lista de símbolos
 % ---
-\begin{simbolos}
-  \item[$ \Gamma $] Letra grega Gama
-  \item[$ \Lambda $] Lambda
-  \item[$ \zeta $] Letra grega minúscula zeta
-  \item[$ f(x;\theta)$] Função de Densidade de Probabilidade
-  \item[$ \Pi $] Produtório
-\end{simbolos}
+%\begin{simbolos}
+%  \item[$ \Gamma $] Letra grega Gama
+%  \item[$ \Lambda $] Lambda
+%  \item[$ \zeta $] Letra grega minúscula zeta
+%  \item[$ f(x;\theta)$] Função de Densidade de Probabilidade
+%  \item[$ \Pi $] Produtório
+%\end{simbolos}
 % ---
 
 % ---
@@ -339,20 +343,28 @@
 \chapter[Introdução]{Introdução}
 %\addcontentsline{toc}{chapter}{INTRODUÇÃO}
 
+A economia em crescimento trás consigo a expansão das linhas de créditos oferecidas pelas instituições financeiras.
+E umas dessas linhas de créditos oferecidas, conhecemos pelo nome de cartão de crédito. Cartão de crédito em resumo, é uma forma de empréstimos com prazo de até 40 dias, disponível para fazer compras de bens e serviços. As taxas normalmente são padrão entre os bancos, mas o limite é definido com base na renda do solicitante do produto bancário.
+
+Desta forma, torna-se mais importante para as instituições entender melhor os seus clientes para melhor oferecer as concessões de créditos e manter uma carteira de crédito bem gerida, evitar grandes prejuízos.
+
+
+
 
 
   \section{Objetivos}
 
-O objetivo deste trabalho é desenvolver um modelo de previsão de risco de inadimplência 
-dos tomadores de cartões de créditos de uma instituição Financeira do Estado de Rondônia.
-Resumidamente, estamos interessados em construir um modelo preditivo
-que propõe efetivamente a decisão sobre o risco de crédito (ou modelo de Credit Scoring).
+A presente pesquisa é desenvolver um modelo de previsão de risco de inadimplência dos tomadores de cartões de créditos de uma instituição Financeira do Estado de Rondônia. Resumidamente, estamos interessados em construir um modelo preditivo de uma amostra de trainamento e após verificar a eficência deste modelo em uma amostra teste. Este modelo propõe auxiliar na tomada de decisão sobre o risco de crédito (ou modelo de Credit Scoring) das concessões de cartões de créditos.
+
+Em todo processo de tomada de decisão pareamos entre duas hipotéses possíveis, podendo-se cometer dois tipos de erros. Um é recusar a concessão de crédito de um solicitante que, apesar de ter um perfil de alto risco, honraria seu compromisso. Outro erro é oferecer o crédito ao solicitante que irá implicar me perdas no futuro. Portanto, é ideal que temos um modelo eficaz para minizar esses erros.
 
 Neste contexto, vamos relacionar os seguintes objetivos específicos:
 
-
-
-
+\begin{itemize}
+  \item Implementar um modelo de \textit{Credit Scoring} por meio de Regressão Logística;
+  \item 
+  \item 
+\end{itemize}
 
 
 % ----------------------------------------------------------
@@ -398,11 +410,14 @@ no tipo de experiência durante o aprendizado do algoritmo.
   ambiente. Não são apresentadas as ações que devem ser tomadas, apenas as consequências das ações.
 \end{itemize}
 
+A Figura \ref{img1} representa a composição da área de \textit{machine learning} com as devidas
+técnicas utilizadas para aprendizagem.
+
 
   \section{Modelo de Regressão Logística}
 
   
-A regressão logística tem como principal uso modelar de uma variável binária $(0,1)$,
+A regressão logística tem como principal uso, modelar uma variável binária $(0,1)$,
 com base em mais variáveis, estas chamadas de variáveis explicativas ou preditoras.
 E comumentemente a variável resposta ou dependente, assim chama-se a variável
 binária do modelo. Conforme \cite{hilbe2016practical}, o melhor modelo ajustado 
@@ -414,7 +429,7 @@ aos dados é assumido que:
 \end{itemize}
   
 A resposta do modelo dito está conveniente a uma distribuição subjacente, ou seja,
-segue uma distribuição de Bernoulli. Concordantemente com \cite{bolfarine2001introduccao}, 
+segue uma distribuição de Bernoulli. Concordantemente com \cite{bolfarine2010introduccao}, 
 esta distribuição é um distribuição particular da distribuição Binomial que 
 a função de probabilidade pode ser expressa:
 \begin{equation}\label{bernoulli}
@@ -424,6 +439,7 @@ a função de probabilidade pode ser expressa:
 \noindent em que $i = 1,\cdots,n$. Estes modelos são comumente empregados em situações
 que a resposta é dicotômica.
 
+\begin{comment}
 Porque não utilizar o modelo de regressão linear? Suponhamos uma situação, estamos 
 tentando prever a condição médica de um paciente com três diagnósticos possíveis: 
 acidente vascular cerebral (AVC), overdose de drogas e convulsões epilépticas. 
@@ -456,13 +472,11 @@ Y = \left\{
 \right.
 $$
 
+\end{comment}
+
 Mesmo usando a regressão linear para utilizar para obter uma estimativa de probabilidade
 do resultado, quebramos um pressuposto, pois algumas estimativas podem estar fora do
-intervalo $[0,1]$.
-
-
-E uma forma capaz de ter uma linha em forma de \textit{"S"} para prever as probabilidades 
-e descrever essa linha curva com os coeficientes da regressão linear.
+intervalo $[0,1]$. Pois está expressão acarreta que é possível para $E(Y|x)$ assumir qualquer valor. 
 
 Presuma que o modelo linear tradicional tenha a forma: 
 
@@ -472,7 +486,10 @@ Presuma que o modelo linear tradicional tenha a forma:
 
 \noindent em que $\mathbf{x'}_i = [1,x_{i1},x_{i2},\cdots,x_{ik}]$, $\beta' = 
 [\beta_0,\beta_1,\beta_2,\cdots,\beta_k]$ e a variável resposta tem valores entre
-o intervalo $[0,1]$. Assumiremos qeu a variável resposta é uma variável aleatória 
+o intervalo $[0,1]$. 
+
+
+Assumiremos qeu a variável resposta é uma variável aleatória 
 com distribuição de Bernoulli com função de probabilidade dita anteriormente pela 
 equação \ref{bernoulli}.
 
@@ -481,18 +498,25 @@ Uma vez que a $E(\varepsilon_i) = 0$, o valor esperado da variável resposta é:
   E(y_i) = 1(\pi_i) + 0(1 - \pi_i)= \pi_i
 \end{equation}
 
-\noindent o que implica em 
+\noindent o que implica em $E(y_i) = \mathbf{x_i'}\beta = \pi_i$, ou seja, o valor esperado da função
+resposta é apenas a probabilidade de que a variável resposta assuma o valor $1$. Como o nosso valor esperado é $\pi_i$ e o resultado dicotômico da variável deve ser maior ou igual a zero e menor do que um ($0 \leq E(y_i) = \pi_i \leq 1$). Pode ser visto na Figura \ref{img2} que a curva é em forma de "S" e se assemelhace a um gráfico 
 
 
-$$
-E(y_i) = \mathbf{x_i'}\beta = \pi_i
-$$
+
+
+
+    \begin{figure}
+      \caption{\label{img2}Gráfico do modelo de regressão logística.}
+      \begin{center}
+        \includegraphics[scale = 0.6]{image/img2.png}
+      \end{center}
+      \legend{Fonte: https://aprenderdatascience.com/regressao-logistica/}
+    \end{figure}
 
 
     \section{Estimação dos Parâmetros}
     
-Para que se tenha um modelo ajustado, é imprescedível que seja feito a estimação dos parâmetros da regressão. 
-Com isso utiliza-se o método de estimação de máxima de verossimilhança. Este método, a partir de um conjunto e um modelo estatístico, estima os valores dos parâmetros do modelo que mais máxima a probabilidade dos dados observados, ou seja, busca parâmetros que maximizem a função de verossimilhança. Condizente (Bolfarine), a definição da função de verossimilhança é:
+Para que se tenha um modelo ajustado, é imprescedível que seja feito a estimação dos parâmetros da regressão. Com isso utiliza-se o método de estimação de máxima de verossimilhança. Este método, a partir de um conjunto e um modelo estatístico, estima os valores dos parâmetros do modelo que mais máxima a probabilidade dos dados observados, ou seja, busca parâmetros que maximizem a função de verossimilhança. Condizente \cite{bolfarine2010introduccao}, a definição da função de verossimilhança é:
 
 \begin{definition}{Definição}
     Sejam $X_1,\ldots,X_n$ uma amostra aleatória de tamanho $n$ da variável aleatória $X$ com função densidade $f(x|\theta)$, com $\theta \in \Theta$ é o espaço paramétrico. A função de verossimilhança de $\theta$ compatível com à amostra aleatória observada é dada por 
@@ -523,26 +547,81 @@ Aplicando o logaritmo natural a função de verossimilhança
 
 
     \section{Testes de Significância}
-      
+    
+Depois de estimar os coeficientes, é necessário um avaliação da significância das variáveis no modelo, geralmente envolve a formulação e teste de hipótese estatística para determinar se as variáveis independentes estão "significativamente" relacionadas com a variável resposta \cite{hosmer2013applied}.
       
       \subsection{Teste da Razão de Verossimilhança (TRV)}
+      
+      
+      
+
         
         
       \subsection{Teste de Wald}
+      
+O teste de Wald é usado para verificar a significância dos coeficientes no modelo. Neste caso, o teste verifica se cada uma das variáveis explicativas apresenta uma relação estatisticamente significativa com a variável resposta, ou seja, o teste compara entre a estimativa de máxima verossimilhança do parâmetro $\hat{\beta_j}$ e a estimativa de seu erro padrão. As hipóteses formuladas do teste são:
+
+\begin{equation}
+\begin{split}
+H_0 & : \beta_j = 0 \\
+    & vs\\
+H_1 & : \beta_j \neq 0
+\end{split}
+\end{equation}
+
+A estatística de teste Wald para a regressão logística é
+
+\begin{equation*}
+  W_j = \frac{\hat{\beta_j}}{SE(\hat{\beta_j})}
+\end{equation*}
+
+\noindent e tem distribuição normal padrão. Se não rejeitarmos $H_0$, temos que a variável $x_j$ não explica a variável resposta.
+
+Conforme \cite{hauck1977wald}, verificaram o desempenho do teste de Wald e descobriram que se comporta de maneira aberrante, em outras palavras, muitas vezes falha em rejeitar a hipótese nula quando o coeficiente era significativo. Por isso, eles recomendaram qeu o teste da razão de verossimilhança seja o ideal.
 
 
 
 
-
-    \section{Seleção de Variáveis}
-
-
-
-
-      \subsection{Desempenho dos Modelos}
+      \subsection{Medida da Qualidade do Ajuste do Modelo}
       
       
-       \subsection{Curva ROC}
+      \subsection{Intervalo de Confiança}
+      
+      \section{Seleção de Variáveis}
+    
+Um dos problemas primordiais na análise de regressão é selecionar as variáveis para o modelo. Está questão sobre se deve incluir todas variáveis regressoras disponíveis ou apenas um subconjunto destas variáveis ao modelo. Após a decisão, as próximas etapas é a significância e adequação do modelo ajustado devem ser verificadas e a análise de resíduos deve ser conduzida. 
+
+\begin{itemize}
+  \item[\textit{i)}] \textbf{Método Forward} (\textit{"passo a frente"}): esse procedimento caracteriza-se por considerar que não há variável no modelo, apenas o intercepto. Será adicionado uma variável de cada vez. A primeira variável selecionada é aquela com maior correlação com a resposta. Etapas se sucedem, quando uma variável por vez pode vir a ser incorporada no modelo se sua estatística F parcial for maior que o ponto crítico, o processo é interrompido quando não houver inclusão \cite{charnet2008analise}.
+  \item[\textit{ii)}] \textbf{Método Backward} (\textit{"passo atrás"}): esse método faz o caminho inverso do método forward, ele incorpora, inicialmente, todas as variáveis e depois, sequencialmente, cada uma pode ser ou não eliminada. A decisão de eliminação da variável é tomada baseando em testes F parciais, que são calculadas por cada variável como se ela fosse última a entrar no modelo \cite{charnet2008analise}.
+  \item[\textit{iii)}] \textbf{Método Stepwise} (\textit{"passo a passo"}): este procedimento é uma generalização do procedimento "passo a frente". As etapas de inclusão e retirada da variável do modelo são efetudadas conforme descrito nos procedimento anteriores.A etapa chega ao final quando nenhuma variável é incluída ou descartada \cite{charnet2008analise}.
+\end{itemize}
+
+E
+      
+
+       
+       
+       \subsection{Diagnóstico Resídual}
+       
+       
+       \subsection{Desempenho do Modelo}
+       
+A matriz de confusão resume o desempenho de classificação de um modelo em relação a alguns dados de testes. É uma matriz bidimensional, organizada em uma dimensão pela verdadeira classe de um objeto e na outra pela classe qeu o classificador atribui. A Tabela \ref{tab2} apresenta como uma matriz de confusão 
+
+
+\begin{table}[]
+\caption{Tabela}
+\label{tab:my-table}
+\begin{tabular}{|c|cc|l|l|}
+\hline
+ & \multicolumn{2}{c|}{Verdadeiro}      \\ \hline
+ \textbf{Predito}& \multicolumn{1}{c|}{Positivo} & Negativo  \\ \hline
+ Positivo& \multicolumn{1}{c|}{VP} &  FP  \\ \hline
+ Negativo& \multicolumn{1}{c|}{FN} &  VN  \\ \hline
+\end{tabular}
+\end{table}
+
 
 
 
@@ -552,6 +631,11 @@ Aplicando o logaritmo natural a função de verossimilhança
 
 
 
+Antemão ao processo de modelagem, foi realizado uma análise exploratória dos dados para entender melhor o conjunto de dados e selecionar possíveis variáveis explicativas. Além disso, existe a necessidade de investigar se há dependências entre as variáveis com efeitos nocivos de multicolinearidade ao modelo estimado.
+
+
+
+Após, faz se necessário uma análise minuciosa dos outliers.
 
 \chapter{Resultados e Discussões}
 
@@ -638,19 +722,40 @@ Aplicando o logaritmo natural a função de verossimilhança
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlcom{############################################################}
-\hlcom{############################################################}
 \hlcom{####                 REGRESSÃO LOGISTICA                ####}
 \hlcom{############################################################}
-\hlcom{############################################################}
-\hlkwd{library}\hlstd{()}
-\hlkwd{library}\hlstd{()}
-\hlkwd{library}\hlstd{()}
-\hlkwd{library}\hlstd{()}
+\hlkwd{library}\hlstd{(tidyverse)}  \hlcom{#}
+\hlkwd{library}\hlstd{(rJava)}      \hlcom{#}
+\hlkwd{library}\hlstd{(xlsx)}       \hlcom{#}
+\hlkwd{library}\hlstd{(readxl)}     \hlcom{#}
+\hlkwd{library}\hlstd{(dlookr)}     \hlcom{#}
+
+
+\hlstd{Dados} \hlkwb{<-} \hlkwd{read_xlsx}\hlstd{(}\hlstr{".../Dataset.xlsx"}\hlstd{,} \hlkwc{sheet} \hlstd{=} \hlnum{2}\hlstd{)}
+
+
+\hlstd{cr} \hlkwb{<-} \hlkwd{select}\hlstd{(Dados,} \hlopt{-}\hlstd{ID)}
+
+\hlcom{### Pré-processamento dos dados ###}
+
+\hlcom{# Verificando as variáveis}
+\hlkwd{str}\hlstd{(cr)}
+\hlkwd{glimpse}\hlstd{(cr)}
+  \hlcom{# Variáveis}
+\hlcom{# Sexo:  Masculino,  Feminino;}
+\hlcom{# Estado Civil: Solteiro, Casado, Divorciado, Viuvo e União Estável;}
+\hlcom{# Instrução: Não Informado, Sem instrução, 1º Grau, 2º Grau, Superior Incompleto, Superior completo e }
+\hlcom{# Pós-Graduação;}
+\hlcom{# Inadimplência: 0 = Não, 1 = Sim;}
+
+
+\hlcom{# Converter "SEXO","ESTADO_CIVIL","ESCOLARIDADE" e "STATUS" para fatores.}
+\hlstd{cr} \hlkwb{<-} \hlkwd{mutate_at}\hlstd{(cr,} \hlkwd{vars}\hlstd{(SEXO, ESTADO_CIVIL, ESCOLARIDADE, STATUS), as.factor)}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
 
-
+\begin{comment}
 \chapter{Script em Python}
 
 \begin{lstlisting}[language=Python, caption=Python example]
@@ -684,6 +789,8 @@ def incmatrix(genl1,genl2):
     
     return M
 \end{lstlisting}
+
+\end{comment}
 
 \end{apendicesenv}
 % ---
