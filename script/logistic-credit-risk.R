@@ -6,7 +6,6 @@ library(dlookr)
 
 Dados <- read_xlsx("C:/Users/Douglas/Documents/Trabalho/Dataset.xlsx", sheet = 2)
 
-
 ### Pré-processamento dos dados ###
 
 # Verificando as variáveis

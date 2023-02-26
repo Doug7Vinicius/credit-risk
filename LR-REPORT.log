@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.4)  14 DEC 2022 04:28
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.1.24)  11 FEB 2023 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **C:/Users/Douglas/Documents/TRABALHO/credit-risk/LR-REPORT.tex
 (c:/Users/Douglas/Documents/TRABALHO/credit-risk/LR-REPORT.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2022-11-02> (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/abntex2/abntex2.cls
+L3 programming layer <2023-01-16> (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
@@ -457,11 +457,11 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count321
 )) (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/11/30 3.83 The Babel package
+Package: babel 2022/01/23 3.85 The Babel package
 \babel@savecnt=\count322
 \U@D=\dimen191
 \l@unhyphenated=\language4
-(c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def))
+(c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count323
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-portuges/brazil.ldf
@@ -747,16 +747,16 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-11-02 L3 programming layer (loader) 
+Package: expl3 2023-01-16 L3 programming layer (loader) 
 (c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
+File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 \g__graphics_track_int=\count361
 \l__pdf_internal_box=\box65
 \g__pdf_backend_object_int=\count362
 \g__pdf_backend_annotation_int=\count363
 \g__pdf_backend_link_int=\count364
 ))
-Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2023-01-16 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count365
@@ -790,7 +790,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 201.
 \openout4 = `LR-REPORT.idx'.
 
 Writing index file LR-REPORT.idx 
-(./LR-REPORT.aux)
+(c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+(c:/Users/Douglas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (./LR-REPORT.aux)
 \openout1 = `LR-REPORT.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 225.
@@ -981,11 +985,11 @@ Package rerunfilecheck Info: File `LR-REPORT.brf' has not changed.
 (rerunfilecheck)             Checksum: 5CB85CBBDAE2998BF3A369FFA3501DD2;596.
  ) 
 Here is how much of TeX's memory you used:
- 20141 strings out of 477624
- 328022 string characters out of 5838764
- 816955 words of memory out of 5000000
- 40964 multiletter control sequences out of 15000+600000
- 549834 words of font info for 85 fonts, out of 8000000 for 9000
+ 20187 strings out of 478759
+ 329316 string characters out of 5848433
+ 1852985 words of memory out of 5000000
+ 39872 multiletter control sequences out of 15000+600000
+ 592862 words of font info for 89 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  87i,15n,90p,1054b,502s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

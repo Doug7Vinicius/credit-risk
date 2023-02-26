@@ -107,6 +107,6 @@ par(mfrow = c(1,3))
 
 boxplot(dadosFinal$LIMITE ~ as.factor(dadosFinal$dados.k3.cluster), col = "blue", main = "Limite")
 boxplot(dadosFinal$IDADE ~ as.factor(dadosFinal$dados.k3.cluster), col = "blue", main = "Idade")
-boxplot(dadosFinal$PATRIMONIO ~ as.factor(dadosFinal$dados.k3.cluster), col = "blue", main = "% uso de limite")
+boxplot(dadosFinal$RENDA ~ as.factor(dadosFinal$dados.k3.cluster), col = "blue", main = "% uso de limite")
 
 write.csv(dadosFinal, file = "cluster.xlsx")

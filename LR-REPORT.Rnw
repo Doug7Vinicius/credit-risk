@@ -114,7 +114,7 @@
 \titulo{Modelo de Regressão Logística Aplicada a Previsão de Inadimplência sobre Cartão de Crédito de uma Instituição Financeira}
 \autor{DOUGLAS VINÍCIUS GONÇALVES ARAÚJO}
 \local{JI-PARANÁ}
-\data{2022}
+\data{2023}
 \instituicao{%
   UNIVERSIDADE FEDERAL DE RONDÔNIA -- UNIR
   \par
@@ -703,6 +703,7 @@ cr <- mutate_at(cr, vars(SEXO, ESTADO_CIVIL, ESCOLARIDADE, STATUS), as.factor)
 @
 
 \begin{comment}
+
 \chapter{Script em Python}
 
 \begin{lstlisting}[language=Python, caption=Python example]

@@ -60,3 +60,23 @@ cl <- select(cluster, -c(...1, SM_30, SM_60, SM_90, SM_180, SM_360))
 
 database <- cl %>%
   filter(dados.k3.cluster %in% 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set.seed(123)
+training.samples <- card$STATUS %>% 
+  createDataPartition(p = 0.8, list = FALSE)
+train.data  <- card[training.samples, ]
+test.data <- card[-training.samples, ]
